@@ -1,0 +1,286 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda aplicacion movil</title>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+ <!--grupo CSS-->
+ <link rel="stylesheet" href="css/tema-app2.min.css"/>
+ <link rel="stylesheet"href="css/jquery.mobile.icons-1.4.5.min.css"/> 
+ <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>  
+ <!--grupo JavaScript--> 
+ <script src="js/jquery-1.11.2.min.js"></script>
+ <script src="js/jquery.mobile-1.4.5.min.js"></script>
+ <script src="js/acciones.js"></script>
+ <script src="phonegap.js"></script>
+ <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+ </script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/iphone.jpg','imagenes/moto.jpg','imagenes/gamabaja2.JPG','imagenes/gamamedia2.jpg','imagenes/gamaalta.jpg','imagenes/compañia2.jpg','imagenes/futuro2.jpg')">
+
+ <div data-role="page" id="Principal" data-theme="c">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Telefonia Celular</h1>
+ </div>
+ <div data-role="main" class="ui-content">
+ </div> 
+ <div> 
+  <ul data-role="listview" data-theme="c" class="ui-listview ui-group-theme-b">
+  <li class="ui-first-child ui -last-child">
+  <a href ="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r"> 
+   <h2>¿Que es un telefono celular?</h2> 
+   <p>Definición.</p> 
+  </a>
+ </li>
+ <li class="ui-first-child ui-last-child">
+     <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Historia del telefono</h2>
+        <p>Muestra toda su historia.</p>
+     </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+   <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Clasificación de los celulares, de acuerdo a su gama.</h2>
+      <p>Clasificacion.</p> 
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+     <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Compañias en México que manejan el servicio de telefonia celular.</h2>
+       <p>Muestra las compañias de México.</p> 
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+   <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Telefonos del futuro.</h2>
+      <p>Telefonos por descubrir y fabricar.</p>
+   </a> 
+  </li> 
+  </ul>
+  <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/wow.jpg" alt="" title="" id="wows1_0"/></li>
+		<li><img src="data1/images/wow1.jpg" alt="" title="" id="wows1_1"/></li>
+		<li><img src="data1/images/wow2.jpg" alt="" title="" id="wows1_2"/></li>
+		<li><img src="data1/images/wow3.jpg" alt="" title="" id="wows1_3"/></li>
+		<li><a href="http://wowslider.net"><img src="data1/images/wow4.jpg" alt="jquery slideshow" title="" id="wows1_4"/></a></li>
+		<li><img src="data1/images/wow5.jpg" alt="" title="" id="wows1_5"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title=""><span><img src="data1/tooltips/wow.jpg" alt=""/>1</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/wow1.jpg" alt=""/>2</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/wow2.jpg" alt=""/>3</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/wow3.jpg" alt=""/>4</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/wow4.jpg" alt=""/>5</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/wow5.jpg" alt=""/>6</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wow slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+ </div>
+ <div data-role="footer" align="center" data-theme="c" data-position="fixed">
+   <div>
+     <img src="imagenes/logo.png" width="46" height="46"> 
+   </div> 
+   <div>
+     <h4>Aplicacion Dos</h4> 
+     <h4>Ximena Gaytan Curiel</h4> 
+   </div> 
+ </div>
+</div> 
+ <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="c">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>¿QUE ES UN TELEFONO CELULAR?</h1>
+   </div>
+   <div data-role="content" align="center">
+     <div>
+       <h2>Un teléfono celular es un dispositivo inalámbrico electrónico que permite tener acceso a la red de telefonía celular o móvil. Se denomina celular debido a las antenas repetidoras que conforman la red, cada una de las cuales es una célula, si bien existen redes telefónicas móviles satelitales. Su principal característica es su portabilidad, que permite comunicarse desde casi cualquier lugar. Aunque su principal función es la comunicación de voz, como el teléfono convencional, su rápido desarrollo ha incorporado otras funciones como son cámara fotográfica, agenda, acceso a internet, reproducción de video e incluso GPS y reproductor mp3. La comunicación telefónica es posible gracias a la interconexión entre centrales móviles y públicas. Según las bandas o frecuencias en las que opera el móvil, podrá funcionar en una parte u otra del mundo. La telefonía móvil consiste en la combinación de una red de estaciones transmisoras-receptoras de radio (repetidores, estaciones base o BTS) y una serie de centrales telefónicas de conmutación de 1.º y 5.º nivel (MSC y BSC respectivamente), que posibilita la comunicación entre terminales telefónicos portátiles (teléfonos móviles) o entre terminales portátiles y teléfonos de la red fija tradicional.</h2>
+       <p><img src="imagenes/celular.png" width="30%" height="23%"></p>
+       <p>&nbsp;</p> 
+     </div>
+   </div>
+   <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Ejemplo:</h1>
+     <div>
+      <p><CENTER>CELULARES</CENTER> </p>
+      <br>
+    </div>
+    <div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','imagenes/iphone.jpg',1)"><img src="imagenes/telefono.jpg" width="280" height="180" id="Image9"></a></div>
+  </div>
+ </div> 
+   <div data-role="footer" data-theme="c" data-position="fixed">
+     <h4>Aplicacion Dos, XGC</h4>
+   </div>
+ </div>
+ 
+ 
+  <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="c">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>HISTORIA DEL TELEFONO...</h1>
+    </div>
+    <div data-role="content" align="center"> 
+      <div> 
+        <h2>La telefonía móvil o celular se conoce desde mediados del siglo XX, aunque no fue hasta los años setenta que poco a poco comenzó a extenderse, primeramente a precios muy altos y con equipos rudimentarios; en un principio el teléfono móvil solo podía ser usado en vehículos por su tamaño, reduciéndose posteriormente a una unidad portátil, y finalmente al tamaño de bolsillo que utilizamos hoy. Pero el teléfono en sí es solo una pequeña parte de un sistema de telefonía mayor. Hoy la red mas grande del mundo la opera AT&T.En 1947, AT&T ideó un novedoso sistema, basado en muchos transmisores pequeños y formar con ellos una red, en lugar de un potente transmisor ubicado en una altura.</h2>
+        </div>
+      </div>
+      <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Ejemplos:</h1>
+     <div>
+      <p><center>Sus cambios...</center> </p>
+      <br>
+    </div>
+    <div> 
+     <center>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','imagenes/moto.jpg',1)"><img src="imagenes/historia.jpg" width="493" height="254" id="Image10"></a>
+     </center>
+    </div>
+  </div>
+ </div> 
+    <div data-role="footer" data-theme="c" data-position="fixed">
+      <h4>Aplicacion Dos, XGC</h4>
+    </div>
+     </div>
+  
+   
+   <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="c">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>CLASIFICACION</h1>
+    </div>
+    <div data-role="content" align="center"> 
+      <div> 
+        <h2>GAMA BAJA.<br>En está categoría entran desde marcas chinas, imitaciones de gama media o alta hasta terminales obsoletos con muy pocas excepciones (Ej: el nokia n8 es una reliquia de colección pero su cámara es muy adelantada para cuando fue lanzado al mercado)<br>    <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Ejemplos:</h1>
+     <div>
+      <p><center>Ejemplo:</center> </p>
+      <br>
+    </div>
+    <div> 
+     <center>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','imagenes/gamabaja2.JPG',1)"><img src="imagenes/gamabaja.jpg" width="300" height="169" id="Image11"></a>
+     </center>
+    </div>
+  </div>
+ </div>  <BR> GAMA MEDIA.<br>Aquí se ubican los SmartPhones algunos dispositivos de marcas asiáticas, dispositivos devaluados por el tiempo que tienen en el mercado (puede ser engañoso) y las propuestas conservadoras en especificaciones de marcas reconocidas que pueden hacer mucho pero no tanto. <br> -Suelen ser muy equilibrados en sus características. <br> -Generalmente no superan los 500 dólares en precio (como mucho). <br> -Tienen algunas funciones de la gama alta del momento. <br> -Los materiales ya son de calidad aceptable. <br> -Pantallas que no superan las 4.5 pulgadas (en promedio). <br> -Cámaras de 3 a 5 Mpx. <br> -Tienen soporte limitado pero existe comunidad de desabolladores para actualizar con una ROM.<br><br><div data-role="collapsible" data-content-theme="false">
+    <h1>Ejemplos:</h1>
+     <div>
+      <p><center>Ejemplo:</center> </p>
+      <br>
+    </div>
+    <div> 
+     <center>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','imagenes/gamamedia2.jpg',1)"><img src="imagenes/gamamedia.jpg" width="300" height="215" id="Image12"></a>
+     </center>
+    </div>
+  </div>
+ </div>  <BR> GAMA ALTA. <br> En este nivel encajan los smartphones que esten dotados con casi todos los elementos más evolucionados.</h2>
+ <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Ejemplos:</h1>
+     <div>
+      <p><center>Ejemplo:</center> </p>
+      <br>
+    </div>
+    <div> 
+     <center>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/gamaalta.jpg',1)"><img src="imagenes/gamaalta2.jpg" width="546" height="206" id="Image13"></a>
+     </center>
+    </div>
+  </div>
+ </div>
+ </div>
+    <div data-role="footer" data-theme="c" data-position="fixed">
+      <h4>Aplicacion Dos, XGC</h4>
+    </div>
+</div>
+  
+  
+  <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="c">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Compañias en Mexico.</h1>
+    </div>
+    <div data-role="content" align="center"> 
+      <div> 
+        <h2>El servicio de telefonía móvil en México alcanza, según estimaciones para el año 2013, a un total de 90 millones de líneas celulares activas (la población mexicana se calcula cerca a los 120 millones de habitantes).El inicio de la telefonía móvil en México se remonta a 1977, cuando se solicitó a la SCT de México (Secretaría de Comunicaciones y Transportes) una concesión para instalar, operar y explotar un sistema de radiotelefonía móvil en el Distrito Federal. Pero no fue hasta 1981 cuando se inició la comercialización de este servicio, el cual fue conocido por el público como Teléfono en el Auto, con el cual se logró, en un lapso de ocho meses, dar servicio a 600 usuarios.</h2>
+        <p><img src="imagenes/telcel.jpg" width="293" height="121"><img src="imagenes/at&t.png" width="371" height="113"><img src="imagenes/movistar.jpg" width="316" height="122"></p> 
+         <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Operadores nacionales con red propia.</h1>
+     <div>
+      <p><CENTER>-Telcel (subsidiaria de América Móvil): operando bajo TDMA (Análogo y Digital), GSM (2G), GPRS (2.5G), EDGE (2.75G), UMTS (3G), HSPA+ y (LTE) (4G) con un 72.23% de cobertura en el país. <br>
+-Movistar: operando también bajo los estándares CDMA (Digital), GSM (2G), GPRS (2.5G), EDGE (2.75G), UMTS (3G), HSDPA (3.5G), HSUPA (3.75G) y LTE (4G) con un 56.78% de cobertura en el país.<br>
+-AT&T México: operando bajo CDMA (Digital) y EV-DO (3G sobre CDMA), GSM (2G), GPRS (2.5G), EDGE (2.75G), UMTS (3G), HSPA+ (3.9G) y 4G LTE (en algunas ciudades solamente), utiliza también iDEN y HSDPA, con un 73.54% de cobertura en el país.
+Cabe destacar que tras la combinación de las redes iusacell-nextel se complementa la red que ya está unificada</CENTER> </p> <br>
+    </div>
+    <div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image14','','imagenes/compañia2.jpg',1)"><img src="imagenes/compañia.jpg" width="300" height="238" id="Image14"></a></div>
+  </div>
+ </div>  
+      </div>
+    </div>
+   <div data-role="footer" data-theme="c" data-position="fixed">
+        <h4>Aplicacion Dos, XGC</h4> 
+   </div>
+   </div> 
+   
+   
+   <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="c">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Telefonos del Futuro.</h1>
+    </div>
+    <div data-role="content" align="center">
+       <div>
+          <h2>La telefonia movil es uno de los segmentos de la tecnogia que mas ha evolucionado. Desde la presentacion en aquel 1983bdel Motorola DynaTAC 8000x, considerado el primer telefono clular del mundo, en poco mas de 30 años los telefonos moviles han revolucionado el mundo y la forma en que no comunicamos. Pantallas flexibles, transparentes o de papel, telefonos armables y sistemas que permiten comunicarnos con los demas sin usar las redes telefonicas son cosas que convergeran en un futuro que cada vez se ve menos lejano.</h2></div> 
+        </div>
+        <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Ejemplos:</h1>
+     <div>
+      <center><p>¡Telefonos increibles!</p></center>
+      <br>
+    </div>
+    <div> 
+      <center>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image15','','imagenes/futuro2.jpg',1)"><img src="imagenes/futuro.jpg" width="225" height="250" id="Image15"></a>
+      </center>
+    </div>
+  </div>
+ </div> 
+        <div data-role="footer" data-theme="c" data-position="fixed">
+          <h4>Aplicacion Dos, XGC</h4>
+        </div>
+      </div>
+   
+    
+     
+</body>
+</html>
